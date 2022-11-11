@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up</title>
+</head>
+<body>
+    <h1>Ingresá tus datos para registrarte!</h1>
+    <form method="POST" action="http://localhost:8080/registro" enctype="multipart/form-data">
+        <input type="text" name="username" placeholder="Email" required>
+        <input type="text" name="password" placeholder="Password" required>
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="text" name="address" placeholder="Direccion" required>
+        <input type="number" name="age" placeholder="Edad" required>
+        <input type="number" name="phone" placeholder="Telefono" required>
+        <input type="file" name="avatar" placeholder="Avatar">
+        <button type="submit">Sing Up</button>
+    </form>
+    <script src="../routes/routerSesion.js"></script>
+</body>
+</html>
